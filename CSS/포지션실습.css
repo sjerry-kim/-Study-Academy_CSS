@@ -1,0 +1,35 @@
+/*2022.08.29.(월)*/
+.outter-box {
+    width: 100%;
+    height: 500px;
+    background-color: cadetblue;
+    font-size: 1.5em;
+}
+.inner-box {
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+}
+
+.inner-box2 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.m-position-relative{
+    position: relative; left:200px;
+}
+
+.m-position-fixed{
+    position: fixed; bottom: 0; right: 0;
+    z-index: 100;
+}
+
+.m-position-absolute{
+    position: absolute; top: 50px; right: 100px;
+}
+
+.m-position-sticky {
+    position: sticky; bottom: 50px;
+}

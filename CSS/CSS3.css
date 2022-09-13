@@ -1,0 +1,62 @@
+/*2022.09.01.(목)*/
+.color-hsl {
+    background-color: hsl(0, 50%, 50%);
+}
+.m-box{
+    width: 100%;
+    height: 200px;
+}
+
+.linear-gradient{
+    background: -webkit-linear-gradient(120deg,red,orange,rgba(0,255,255,0.5) );
+}
+
+body {
+    background-color: white;
+}
+
+.radial-gradient{
+    background:-webkit-radial-gradient(rgba(199,110,110,0) 30%, orange 30%) ;
+}
+
+.m-background{
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+}
+
+.m-frame {
+    /*static포지션의 위치에서 이동*/
+    position: absolute;
+    margin-top: -100px;
+}
+
+.box-shadow{
+    background-color: aquamarine;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.box-img{
+    background-image: url(https://cdn.pixabay.com/photo/2021/11/12/12/16/leaves-6788800_960_720.jpg);
+    background-size:contain;
+}
+
+.m-textbox{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
+
+.text-overflow {
+    word-break:break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.korean-overflow{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

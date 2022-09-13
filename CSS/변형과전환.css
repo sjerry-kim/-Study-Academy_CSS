@@ -1,0 +1,201 @@
+/*2022.09.01.(목)*/
+.m-box{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+}
+
+.translate{ transform :translate(50px,100px); /*x,y축 기준으로 이동할 수 있음*/}
+
+.rotate { rotate: 30deg; }
+
+.scale {transform :scale(0.5);}
+
+.skew { transform: skewX(-20deg); }
+
+.matrix {transform: matrix(1, 2, 3, 4, 5, 6); visibility: hidden;}
+
+.t-box{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+
+}
+
+.transition-width{
+    transition: width 1s;
+}
+
+.transition-width:hover{
+    width: 200px; 
+    transition-duration: 0.5s;
+}
+
+.transition-height{
+    transition: height 1s;
+}
+
+.transition-height:hover{
+    height: 200px;
+    transition-duration: 1.5s;
+}
+
+.transition-color{
+    transition: background-color 1s,
+    border-radius 1s;}
+
+.transition-color:hover{
+    background-color: coral;
+    border-radius: 50%;}
+
+.transition-transform{
+    transition: transform 1s;
+}
+
+.transition-transform:hover{
+    transform: scale(1.5) translate(100px,0) rotate(90deg);
+}
+
+
+/*2022.09.02.(금)*/
+.transition-delay{
+    transition: opacity 1s; 
+    transition-delay: 0.3s;
+}
+
+.transition-delay:hover {
+    opacity: 0;
+}
+
+.transition-delay-input {
+    transition: background-color 1ms;
+    /*
+    딜레이와 듀레이션은  시작할 때 값을 하나만 주면
+    전환 시작/끝의 딜레이와 듀레이션이 동일하게 들어간다
+    원한다면 값을 따로 줄 수 있다
+    */
+}
+
+.transition-delay-input:focus{
+    background-color: darkorange;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+
+.transition-timing-linear{
+    transition: transform 1s;
+    transition-timing-function: linear;
+}
+
+.transition-timing-linear:hover{
+    transform: translateX(100px) ;
+}
+
+.transition-timing-ease{
+    transition: transform 1s;
+    transition-timing-function: ease;
+}
+
+.transition-timing-ease:hover{
+    transform: translateX(100px);
+}
+
+.transition-border{
+    box-sizing: border-box;
+    transition: border 1s;}
+
+.transition-border:hover{
+    border: 5px solid navy;
+    /*
+    border는 위치가 밀린지만 outline은 위치가 밀리지 않음
+    box-sizing을 border-box로 설정하면 선이 안쪽에 생긴다
+    */
+}
+
+.transition-check + span {
+    transition: color 1s;
+}
+.transition-check:checked + span {
+    color: red;
+}
+
+
+.menu{
+    display: inline-block;
+}
+
+.menu:hover .menu-icon {
+border-top: 3px solid red;
+}
+
+.menu-icon {
+    box-sizing: border-box;
+    margin: 3.5px 0;
+    width: 20px;
+    height: 3px;
+    border-top: 3px solid black;
+    transition: border-top 1s;
+}
+
+.line1{
+    transform-origin: left top;
+    transition: transform 1s;
+}
+
+.menu:hover .line1{
+    transform: rotate(45deg);
+}
+
+.line2{
+    transition: opacity 1s;
+}
+
+.menu:hover .line2{
+    opacity:0;
+}
+
+.line3{
+    transform-origin: left bottom;
+    transition: transform 1s;
+}
+
+.menu:hover .line3{
+    transform: rotate(-45deg);
+}
+
+/*마우스를 올렸을 때 이미지 확대*/
+.img-box{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    transition: background 1s;
+}
+
+.img{
+    width: 350px;
+    transition: transform 1s;
+}
+
+.img-box:hover .img{
+    transform: scale(1.2);
+}
+
+.img-box::after{
+    box-sizing: border-box;
+    display: inline-block;
+    content: "미리보기";
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 80px 0;
+    width: 200px;
+    height: 200px;
+    position: absolute; 
+    margin-top: -237px;
+    transition: background-color 1s; 
+}
+
+.img-box:hover:after{
+    background-color: gray;
+}

@@ -1,0 +1,41 @@
+/*2022.08.31.(수)*/
+ul {
+    margin: 0;
+    padding-inline-start:0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.gnb {
+    display: inline-block;
+    width: 100%;
+    background-color: burlywood;
+}
+.gnb > ul > li {
+    float: left;
+    padding: 5px 10px;
+}
+
+.g-sub {
+    display: none;
+    position: absolute;
+    background-color: brown;
+    margin-left: -10px;
+    padding: 10px 0;
+}
+.g-sub > li {
+    padding: 5px 10px;
+}
+.gnb > ul > li:hover, .g-sub > li:hover {
+    background-color: white;
+}
+
+.gnb > ul > li:hover .g-sub {
+    display: block;
+}

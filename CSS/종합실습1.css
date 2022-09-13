@@ -1,0 +1,12 @@
+/*2022.08.29.(월)*/
+a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: orange;
+}
+
+a:hover {
+    background-color: orangered;
+}

@@ -1,0 +1,63 @@
+/*2022.09.02.(금)*/
+.flex-container{
+    /*플렉스 컨테이너를 통해서 안에있는 요소들을 정렬*/
+    display: flex;
+    background-color: darkgrey;
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+}
+
+/*수평방향 정렬-플렉시블 컨테이너에서 사용!*/
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.justify-right{
+    justify-content:right;
+}
+
+/*수직 방향 정렬을 위한 높이 추가*/
+.height{
+    height: 250px;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-flex-end{
+    align-items: flex-end;
+}
+
+.align-stretch{
+    align-items: stretch;
+}
+
+/*플렉스박스 여러줄 출력*/
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+/*
+플렉스 박스에서 여러줄 출력할 때, 플렉스 라인 정렬
+이때 수직방향에 공간이 있어야 적용된다
+*/
+.align-content{
+    align-content: center ;
+}
+
+.f-container{
+    display: flex;
+    list-style-type: none;
+    background-color: lightsalmon;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

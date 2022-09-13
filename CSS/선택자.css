@@ -1,0 +1,144 @@
+/*2022.008.30.(화)*/
+.m-parents p{
+    background-color: yellow;
+}
+
+/*자식 선택자 접근*/
+.m-parents > p {
+    border: 3px solid red;
+}
+
+/*일반 동위 선택자*/
+.m-sibling ~ p {
+    background-color: beige;
+}
+
+/*인접 동위 선택자*/
+.m-sibling + p {
+    background-color: chocolate;
+}
+
+.test-ul li{
+    float: left;
+    padding: 0px 20px;
+    list-style-type: none;
+    border-right: 1px solid black;
+}
+
+.test-ul .last-li + li{
+    border: none;
+}
+
+/*2022.08.31.(수)*/
+
+/*링크(a태그)에 사용하는 동적의사클래스*/
+a:link{color: red;}
+a:visited{color: blue;}
+a:hover{color: yellow;}
+a:active{color: green;}
+
+/*포커스를 가질 수 있는 요소에 사용하는 동적의사클래스*/
+.focus-input:focus{background-color: coral;}
+
+/*체크 상태일때, 바로 뒤에 있는 span태그의 배경색을 바꿈*/
+.checked-box:checked + span{
+    background-color: pink;}
+
+/*disabled 상태일 때, 바로 뒤에 있는 span 태그의 글자색을 바Rns다.*/
+.disabled-box:disabled + span{color:grey;}
+
+.enabled-box:enabled + span{background-color: blue;}
+
+/*구조의사 클래스*/
+.table-child {
+    border-collapse: collapse;
+}
+
+.table-child tr:first-child{
+    background-color: beige;
+}
+
+.table-child tr td:first-child{
+    background-color: skyblue;
+}
+
+.table-child tr:nth-child(2n-1){
+    background-color: lightgreen;
+}
+
+.of-type li:nth-of-type(2){
+    background-color: brown;
+}
+
+.of-type :first-of-type{
+    background-color: blue;
+}
+
+.first-letter::first-letter{
+    font-size: 1.5em;
+}
+
+.first-line::first-line{
+    color: red;
+}
+
+.before::before{
+    /*content: before를 이용해서 앞에 들어가는 내용*/
+    content: "추가!";
+    /*content 안에 들어가는 내용을 꾸민다*/
+    color: blue;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.after::after{
+    /*컨텐츠에 아무내용이 없을때는
+    display값을 inline-block으로 두어 크기를 설정할 수 있게 된다*/
+    content: "";
+    background-color: brown;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.selection::selection{
+    background-color: black;
+    color: white;
+}
+
+input[type="button"] + span{
+    background-color: blue;
+}
+
+input[type="checkbox"] + span{
+    background-color: coral;
+}
+
+p[class]{
+    text-decoration-line: line-through;
+}
+
+input[type="radio"] + span{
+    color: lightseagreen;
+}
+
+/*
+not의사 클래스는 앞에 요소를 붙여서 지정하지 않고
+괄호 안에 제외할 태그나 선택자를 입력한다
+*/
+body :not(p){ /*body 바로 아래에 있는 태그들만 식별하여 적용,,?*/
+    color: blueviolet;
+}
+
+.not:not(p){
+    color: orange;
+}
+
+.color {
+    color: yellowgreen;
+}
+
+h1.color{
+    color: magenta;
+}

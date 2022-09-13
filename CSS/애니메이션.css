@@ -1,0 +1,105 @@
+/*2022.09.02.(금)*/
+.animation{
+    border: 3px solid orange;
+    /*애니메이션 속성을 통해 이름과 시간을 정해준다*/
+    animation: animation 3s;
+}
+
+/*애니메이션을 사용하기 위한 키프레임*/
+@keyframes animation{
+    /*처음 시작 디자인*/
+    from{margin-left: 100%;}
+    /*마지막 디자인*/
+    to{margin-left: 0;}
+}
+
+.animation-hover:hover{
+    animation: animationHover 3s;
+}
+
+@keyframes animationHover{
+    from{margin-left: 0;}
+    to{margin-left: 100%;}
+}
+
+.animation-border{
+    border: red 3px solid;
+    animation: border 3s;
+}
+
+@keyframes border{
+    /*퍼센트로 애니메이션을 시간순에 따라 줄 수 있다*/
+    0%{border-color: red;}
+    30%{border-color: orange;}
+    60%{border-color: yellow;}
+    90%{border-color: green;}
+    100%{border-color: blue;}
+}
+
+.a-box{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+
+.animation-count{
+    animation: rotation 2s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation{
+    0% {transform: rotate(0deg) translate(0px);}
+    50% {transform: rotate(180deg) translate(200px);}
+    100%{transform: rotate(360deg) translateY(0px);}
+}
+
+.animation-direction:hover{
+    animation: animation 3s;
+    animation-direction: reverse;
+}
+
+.new-box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid salmon;
+    box-shadow: 0 0 5px salmon;
+    animation: round 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes round {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg); 
+        border-top-left-radius:50%;
+        border-bottom-left-radius:0%;
+        border-bottom-right-radius:0%;
+        border-top-right-radius:0%;}
+    50% {transform: rotate(180deg); 
+        border-top-left-radius:50%;
+        border-bottom-left-radius:50%;
+        border-bottom-right-radius:0%;
+        border-top-right-radius:0%;}
+    75% {transform: rotate(270deg);
+        border-top-left-radius:50%;
+        border-bottom-left-radius:50%;
+        border-bottom-right-radius:50%;
+        border-top-right-radius:0%;}
+    100% {transform: rotate(360deg);
+        border-top-left-radius:50%;
+        border-bottom-left-radius:50%;
+        border-bottom-right-radius:50%;
+        border-top-right-radius:50%;}
+}
+
+.text-box{
+    position: absolute;
+    margin-top: -200px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 85px 0;
+    font-size: 1.3em;
+}

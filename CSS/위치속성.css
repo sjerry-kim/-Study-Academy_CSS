@@ -1,0 +1,29 @@
+/*2022.08.29.(월)*/
+.m-box {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
+.m-position-static {
+/* 정적 위치 */
+    position: static;
+}
+
+.m-positon-relative {
+/* 상적위치 */
+    position : relative; left: 30px;
+}
+
+.m-postion-fixed {
+/* 고정위치 */
+    position: fixed; top: 0; right: 0;
+    z-index: 100;
+}
+
+.m-position-absolute{
+    position: absolute; top: 800px; right: 0px;
+}
+
+.m-position-sticky{
+    position: sticky;
+}

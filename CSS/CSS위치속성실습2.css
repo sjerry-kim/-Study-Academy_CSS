@@ -1,0 +1,19 @@
+/*2022.08.30.(화)*/
+div {
+    background-color: yellow;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    padding: 20px;
+}
+
+li{
+    display: flex;
+    padding: 10px;
+    list-style: none;
+    background-color: rgb(12, 100, 59);
+}
+

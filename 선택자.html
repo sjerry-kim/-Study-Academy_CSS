@@ -1,0 +1,127 @@
+<!--2022.08.30.(화)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <link rel="stylesheet" href="/css/선택자.css">
+</head>
+<body>
+    <h1>결합선택자</h1>
+    <h2>자손과 자식선택자</h2>
+    <div class="m-parents">
+        <p>자식 : m-parents클래스 바로 아래있는 태그</p>
+        <div>
+            <p>자손 : m-parents클래스에 속한 태그</p>
+        </div>
+    </div>
+
+    <h1>동위 선택자</h1>
+    <h2>일반 동위 선택자와 인접 동위 선택자</h2>
+    <div>
+        <p class="m-sibling">현재 요소</p>
+        <p>인접 동위 요소 : 동위 = 동등한 위치에 있는 요소</p>
+        <p>일반 동위 요소</p>
+        <div>
+            <p>동위요소가 아님</p>
+        </div>
+        <p>일반 동위 요소</p>
+    </div>
+
+    <h2>인접동위 선택자 예시</h2>
+    <ul class="test-ul">
+        <li>A</li>
+        <li class="last-li">B</li>
+        <li>C</li>
+    </ul>
+
+    <!--2022.08.31.(수)-->
+    <br>
+    <h1>의사클래스 </h1>
+    <h2>동적의사클래스</h2>
+    <a href="http://www.naver.com">링크에 걸리는 동적 의사 클래스</a><br>
+    <input class="focus-input" type="text">
+    포커스를 가지는 동적 의사 클래스
+
+    <h2>상태 의사 클래스</h2>
+    <input class="checked-box" type="checkbox">
+    <span>상태의사 클래스로 꾸며준 체크박스</span><br>
+
+    <input class="disabled-box" type="checkbox" disabled>
+    <span>상태 의사 클래스로 꾸며준 체크박스</span><br>
+
+    <input class="enabled-box" type="checkbox">
+    <span>disable 상태가 아닐 때(enabled)꾸며준 체크박스</span>
+
+    <h2>구조의사클래스</h2>
+    <p>부모자식 관계에서 요소를 찾기 위한 의사클래스</p>
+    <table class="table-child">
+        <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+        </tr>
+        <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+        </tr>
+        <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+        </tr>
+        <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+        </tr>
+    </table>
+
+    <h2>of-type</h2>
+    <ol class="of-type">
+        <li>1번째</li>
+        <li class="type" >2번째</li>
+        <li>3번째</li>
+        <li>4번째</li>
+    </ol>
+    <ol class="of-type">
+        <a>1번째</a>
+        <li>2번째</li>
+        <li class="type">3번째</li>
+        <li>4번째</li>
+    </ol>
+
+    <h2>의사요소</h2>
+    <p class="first-letter">첫 글자만 선택</p>
+    <p class="first-line">
+        첫번째 라인을 선택해서 꾸며줍니다. 윈도우 크기가 작아져서 아래로 내려가도 첫 번째 줄만 꾸밉니다.<br>
+        두번째 라인입니다
+    </p>
+    <p class="before">앞에 새로운 내용이 추가됩니다</p>
+    <p class="after">뒤에 새로운 내용이 추가됩니다</p>
+    <p class="selection">드래그 하여 선택한 부분은 바탕과 글자색이 반전됩니다</p>
+
+    <h2>속성 선택자</h2>
+    <!-- type(속성) = "button(속성값)"-->
+    <input type="button"> <span>버튼 타입입니다</span><br>
+    <input type="checkbox"> <span>체크박스 타입입니다</span><br>
+
+    <!--input type="radio" 태그를 생성하고 뒤에 작성한 span태그의 글자색을 변경-->
+    <input type="radio"><span>라디오 타입입니다</span><br>
+
+    <h2>기타 의사 클래스</h2>
+    <p>내용을 작성하였습니다</p>
+    <div>div 태그 안에 작성하였습니다</div>
+
+    <!--not 클래스 안에 있는 p를 제외하고 글자색을 바꾸세요-->
+    <div class="not">
+        <h1>동일한 색상을 넣을 태그입니다</h1>
+        <h2>동일한 색상을 넣을 태그입니다</h2>
+        <p>제외할 태그입니다</p>
+    </div>
+
+    <h2>특정요소의 클래스</h2>
+    <h3 class="color">color클래스입니다</h3>
+    <h1 class="color">h1태그의 color클래스입니다</h1>
+
+</body>
+</html>

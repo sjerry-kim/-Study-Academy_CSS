@@ -1,0 +1,29 @@
+/*2022.08.29.(월)*/
+.header{
+    border: 3px solid orange;
+}
+
+.nav{
+    border: 3px solid red;
+    float: left;
+    width: 30%;
+}
+
+.section{
+    clear: both;
+    border: 3px solid green;
+}
+
+.m-box{
+    background-color: burlywood;
+    width: 300px;
+    height: 800px;
+    overflow: auto;
+}
+
+.float-box {
+    background-color: lightpink;
+    float: left;
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,79 @@
+/*2022.08.26.(금)*/
+
+h1 {
+    display:flex;
+    justify-content: left;
+    color: lightgrey; 
+}
+/* image는 파일주소 또는 인터넷 주소를 통해 가져올 수 있다*/
+/*
+    대부분의 css의 속성은 대분류-소분류로 이름이 지정되어있다.
+    대분류(background)로 접근을 하여 속성값으 할당해주게 되면,
+    관련된 속성을 동시에 작성할 수 있다
+*/
+body {
+    background-image: url(/img/img.jpg);
+    background-repeat : no-repeat;
+    background-position: 100px 200px;
+    background-attachment: fixed;
+    background: rgb(8, 48, 26);
+}
+p { text-align: center; 
+    text-decoration-line: underline;
+    text-decoration-color: whitesmoke;
+    text-decoration-style: dashed; 
+    text-decoration-thickness: 1px;
+    color: grey;}
+/*div 태그에 css작성 유의점 : 반드시 width, height값을 지정 (값이 있을 때는 자동으로 지동됨)*/
+.mypicture{
+    width: 300px;
+    height: 150px;
+    background-color: lemonchiffon;}
+
+h2 {
+    color: orange;
+    text-decoration: overline grey 1px solid;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'HY견고딕';
+    font-variant:normal;
+    font-size: 30px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: orange;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+    list-style-type: none;
+    list-style-position: inside;
+    color: white;
+}
+
+table{
+    color:aliceblue;
+    border: 3px solid grey;
+    border-collapse: collapse;
+    text-align: center;
+    width: 500px;
+    height: 80px;
+    empty-cells: show;
+}
+
+tr{
+    border: 3px dashed pink;
+}
+
+td {
+    border: 2px dotted lightseagreen;
+    vertical-align: bottom;
+}

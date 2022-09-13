@@ -1,0 +1,14 @@
+/*2022.09.02.(금)*/
+.main{
+    display: inline-block;
+    width: 100%;
+    background-color: beige;
+}
+
+.colums{
+    column-count: 5;
+    column-rule-style: dashed;
+    column-rule-color: red;
+    column-rule-width: 2px;
+    column-gap: 40px;
+}

@@ -1,0 +1,143 @@
+/*2022.09.05.(월)*/
+body{
+    background-color: orange;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 100px;
+}
+
+.grid-item{
+    border: 1px solid lemonchiffon;
+    display: grid;
+}
+/* 내가 쓴 코드
+.nav {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: lemonchiffon;
+}
+*/
+
+h1{
+    color: whitesmoke;
+}
+
+/*min-width 적어준 값 이상일 때 보여지는 화면*/
+@media screen and (min-width:1024px) {
+    body{
+        background-color: lightblue;
+    }
+/* 내가 쓴 코드
+    .nav > .menu{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav > .menu > li {
+        list-style: none;
+    }
+
+    .nav > .mobile-menu {
+        display: none;
+    }
+*/
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    body{
+        background-color: lightcoral;
+    }
+    
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+/* 내가 쓴 코드
+    .nav{
+        height: 80px;
+    }
+
+    .nav > .menu{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .nav > .menu > li {
+        list-style: none;
+        padding: 0 150px;
+    }
+
+    .nav > .mobile-menu {
+        display: none;
+    }
+*/
+}
+
+/*max-width 적어준 값 이하일 때 보여지는 화면*/
+@media screen and (max-width:767px) {
+    body{
+        background-color: darkkhaki;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+/* 내가 쓴 코드
+    .nav > .menu{
+        display: none;
+    }
+
+    .nav > .mobile-menu {
+        display: inline-block;
+        margin: auto;
+    }
+*/
+}
+
+/*미디어쿼리를 이용한 화면크기에 따른 네브바 변화*/
+.nav{
+    border-bottom: 5px solid black;
+}
+
+.nav .mobile-menu{
+    display:none;
+}
+
+.nav .menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.nav .menu li{
+    padding: 2px 10px;
+}
+
+/*pc크기에서 보여질 화면 : 채워도 되고 안채워도 됨*/
+@media screen and (min-width:1024px){
+
+}
+
+/*탭 크기에서 보여질 화면*/
+@media (min-width:768px) and (max-width:1024px){
+    .nav .menu {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+    }
+    
+
+}
+
+/*모바일 크기에서 보여질 화면*/
+@media screen and (max-width:767px){
+    .nav .mobile-menu{display: block;}
+    .nav .menu{display: none;}
+}

@@ -1,0 +1,42 @@
+/*2022.08.29.(월)*/
+.m-padding{
+/*패딩 축약포현 : top right bottom left*/
+    padding: 20px 50px 30px 60px;
+    background-color: yellow;
+}
+
+.m-padding-all{
+/*값 하나만 지정하면 모등 패딩값이 동일*/
+    padding: 10px;
+    background-color: greenyellow;
+}
+
+.m-padding-xy{
+/*값 두개를 넣게 되면 top,botton/ ringt,left의 값 동일*/
+    padding: 20px 50px;
+    background-color: orange;
+}
+
+.m-border{
+/*border 축약포현 : top right bottom left*/
+/*네 가지 값을 같는 모든 속성에서 동일하게 적용*/
+    border-style: solid;
+    border-width: 5px;
+    border-color: red green blue yellow;
+}
+
+.m-margin{
+/*margin값 위아래가 적용되기 위해 디스플레이값 block, inline-block이 필요하다*/
+    display: inline-block;
+    margin: 20px 50px 30px 60px;
+}
+
+.m-margin-auto{
+    margin: auto;
+}
+
+.m-outline{
+/*border와 다른점 ? 개발자도구 박스모델에서 표시되지 않는다는 점...?*/
+    padding: 20px;
+    outline: 3px solid teal;
+}

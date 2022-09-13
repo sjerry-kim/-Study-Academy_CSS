@@ -1,0 +1,62 @@
+/*2022.09.02.(금)*/
+/*헤더 플랙스 박스로 정렬하기*/
+body{
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    
+}
+
+.header{
+    justify-content: space-between;
+}
+
+/*태그 플랙스 박스로 정렬하기*/
+.tag > ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.tag > ul > li {
+    background-color: rgb(243, 243, 243);
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 3px 10px;
+    margin: 5px;
+}
+
+/*main에서 flex로 정렬*/
+.main{
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.section1{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(243, 243, 243);
+}
+
+.section2{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(250, 250, 250);
+}
+
+.section2 > div{
+    max-width: 300px;
+    min-width: 200px;
+    height: 100px;
+    background-color: rgb(243, 243, 243);
+}
+
+
+.section3{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(243, 243, 243);
+}

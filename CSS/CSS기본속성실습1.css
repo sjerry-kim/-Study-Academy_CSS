@@ -1,0 +1,30 @@
+/*22.08.26.(금)*/
+h1 {
+    font-family: fantasy;
+}
+
+div {
+    border: 2px solid rgb(131, 145, 14);
+    width: 50%;
+    background-color:rgb(251, 252, 228)
+}
+
+ul {
+    list-style: circle;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    font-style: italic;
+}
+
+span { 
+    font-family: 궁서;
+    text-decoration: underline wavy red 2px;
+    color: green;
+}

@@ -1,0 +1,49 @@
+/*2022.08.31.(수)*/
+ol > li{ background-color: lightgoldenrodyellow;}
+
+input:focus{
+    color: orangered;
+    font-weight: bold;
+    background-color: black;
+}
+    
+.list{
+    list-style: none;
+}
+
+.list li input:checked + span{
+    text-decoration-line: line-through;
+}
+
+.li-background li:nth-child(2n){
+    background-color: lightpink;
+}
+
+.box {
+    border: 3px solid red;
+    padding: 10px 0px 25px 0px
+}
+
+.box p {
+    color: black;
+    font-weight: bold;
+}
+
+.box a{
+    padding: 0px 30px;
+    text-decoration: none;
+}
+
+.tags{
+    display: flex;
+    justify-content: right;
+}
+
+.tags p{
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    margin-left: 15px;
+    border-radius: 20px;
+}

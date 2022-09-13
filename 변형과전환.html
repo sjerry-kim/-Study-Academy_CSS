@@ -1,0 +1,76 @@
+<!--2022.09.01.(목)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변형과 전환</title>
+    <link rel="stylesheet" href="/css/변형과전환.css">
+</head>
+<body>
+    <h1>변형-transform</h1>
+    <div class="m-box translate">
+        <p>translate로 위치를 이동한 div입니다</p>
+    </div>
+    <div class="m-box">
+        <p>위치를 이동하였지만, 아래 생성되는 div 위치는 동일합니다</p>
+    </div>
+
+    <h2>회전</h2>
+    <div class="m-box rotate">
+        <p>글자도 회전되어서 출력됩니다</p>
+    </div>
+
+    <h2>배율 확대 축소</h2>
+    <div class="m-box scale">
+        <p>scale을 통해서 크기를 조절하면 중앙에서부터 조절된다</p>
+    </div>
+    <div class="m-box"></div>
+
+    <h2>기울기</h2>
+    <div class="m-box skew"></div>
+
+    <h2>전체</h2>
+    <div class="m-box matrix"></div>
+
+    
+    <h1>전환</h1>
+    <div class="t-box transition-width"></div>
+    <div class="t-box transition-height"></div>
+    <div class="t-box transition-color"></div>
+
+    <h2>변형과 함께 쓰는 전환</h2>
+    <div class="t-box transition-transform"></div>
+
+    
+    <!--2022.09.02.(금)-->
+    <h2>딜레이 속성</h2>
+    <div class="t-box transition-delay"></div>
+    <input class="transition-delay-input" type="text">
+
+    <h2>전환 효과의 속도</h2>
+    <div class="t-box transition-timing-linear"></div>
+    <div class="t-box transition-timing-ease"></div>
+
+    <!-- 변형과 전환 연습 -->
+    <!-- div 태그를 이용해서, 마우스를 올리면 border값이 5px 생기는 전환 -->
+    <div class="t-box transition-border"></div>
+
+    <!-- 체크박스를 클릭했을 때, 뒤에 있는 span태그의 글자색이 바뀌는 전환 -->
+    <input class="transition-check" type="checkbox">
+    <span>체크하면 글자색이 바뀜</span>
+
+    <!--메뉴아이콘이 X아이콘으로-->
+    <div class="menu">
+        <div class="menu-icon line1"></div>
+        <div class="menu-icon line2"></div>
+        <div class="menu-icon line3"></div>
+    </div>
+
+    <!--이미지에 마우스를 올렸을 때 이미지 확대-->
+    <div class="img-box">
+        <img class="img" src="img/img.jpg" alt="">
+    </div>
+</body>
+</html>
